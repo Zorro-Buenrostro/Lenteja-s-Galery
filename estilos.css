@@ -1,0 +1,58 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Playfair Display", serif;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tarjeta h2 {
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Playfair Display", serif;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.tarjeta p {
+  padding: 0 1rem 1rem 1rem;
+  color: #666;
+}
+
+/* Efectos hover (reto extra) */
+.tarjeta:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta:hover h2 {
+  color: #0077cc;
+}
